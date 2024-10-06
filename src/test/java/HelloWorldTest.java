@@ -33,7 +33,7 @@ public class HelloWorldTest {
     public void testTellFunFact() throws Exception {
         // Use reflection to access the private method
         Method method = HelloWorld.class.getDeclaredMethod("tellFunFact");
-        method.setAccessible(true); // Make the method accessible
+        method.setAccessible(true);
         String fact = (String) method.invoke(null);
 
         // Ensure the method returns a non-null and non-empty string
