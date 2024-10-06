@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
-        <project.build.source.encoding>UTF-8</project.build.source.encoding> <!-- Corrected here -->
+        <project.build.source.encoding>UTF-8</project.build.source.encoding>
         <junit.jupiter.version>5.9.3</junit.jupiter.version>
     </properties>
 
@@ -55,7 +55,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.mt.Main</mainClass> <!-- Update with your actual main class path -->
+                            <mainClass>com.mt.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
