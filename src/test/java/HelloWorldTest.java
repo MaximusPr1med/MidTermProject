@@ -36,7 +36,7 @@ public class HelloWorldTest {
         method.setAccessible(true);
         String fact = (String) method.invoke(null);
 
-        // Ensure the method returns a non-null and non-empty string a
+        // Ensure the method returns a non-null and non-empty string
         assertNotNull(fact);
         assertFalse(fact.isEmpty());
     }
