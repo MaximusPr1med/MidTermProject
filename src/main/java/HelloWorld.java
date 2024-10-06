@@ -84,7 +84,7 @@ public class HelloWorld {
         }
     }
 
-    private static void tellFunFact() {
+    public static String tellFunFact() {
         String[] funFacts = {
                 "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3000 years old and still edible!",
                 "A group of flamingos is called a 'flamboyance'.",
@@ -93,7 +93,7 @@ public class HelloWorld {
                 "Wombat poop is cube-shaped."
         };
         int randomIndex = (int) (Math.random() * funFacts.length);
-        System.out.println("Here's a fun fact: " + funFacts[randomIndex]);
+        return funFacts[randomIndex];
     }
 
     public static double add(double a, double b) {
@@ -109,6 +109,9 @@ public class HelloWorld {
     }
 
     public static double divide(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero!");
+        }
         return a / b;
     }
 }
